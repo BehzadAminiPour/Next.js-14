@@ -1,0 +1,21 @@
+import Link from "next/link";
+
+const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
+
+const SingleDrink = async ({ params }) => {
+  const response = await fetch(`${url}${params.id} `);
+  const data = await response.json();
+  const title = data?.drinks[0]?.strDrink;
+  const imgSrc = data?.drinks[0]?.strDrinkThumb;
+
+  return (
+    <div>
+      <Link href="/drinks" className="btn btn-sm btn-accent mb-3">
+        Back to Drinks
+      </Link>
+      <h1>{title}</h1>
+    </div>
+  );
+};
+
+export default SingleDrink;
