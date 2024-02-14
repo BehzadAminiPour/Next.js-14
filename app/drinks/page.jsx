@@ -9,6 +9,7 @@ const DrinksPage = async () => {
 
   return (
     <div>
+      <h1 className="text-center text-3xl font-bold">All Drinks</h1>
       <DrinkList drinks={data.drinks} />
     </div>
   );
