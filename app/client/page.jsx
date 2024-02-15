@@ -20,8 +20,11 @@ const ClientPage = () => {
           +
         </button>
       </div>
-      <div className="flex justify-center">
-        <button className="btn btn-md bg-orange-500 text-slate-50 hover:bg-orange-400">
+      <div className="flex justify-center mt-2">
+        <button
+          className="btn btn-md bg-orange-500 text-slate-50 hover:bg-orange-400 "
+          onClick={() => setCount(0)}
+        >
           Reset
         </button>
       </div>
