@@ -5,7 +5,10 @@ const DrinkList = ({ drinks }) => {
   return (
     <ul className="grid sm:grid-cols-3 gap-4 mt-6">
       {drinks.map((drink) => (
-        <li key={drink.idDrink}>
+        <li
+          key={drink.idDrink}
+          className="p-2 bg-white hover:bg-slate-100 hover:rounded-md"
+        >
           <Link href={`/drinks/${drink.idDrink}`}>
             <div className="relative h-48 mb-4">
               <Image

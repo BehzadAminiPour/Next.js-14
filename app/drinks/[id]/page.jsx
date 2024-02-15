@@ -23,7 +23,7 @@ const SingleDrink = async ({ params }) => {
         width={300}
         height={300}
       />
-      <h1>{title}</h1>
+      <h1 className="text-2xl mt-3">{title}</h1>
     </div>
   );
 };
