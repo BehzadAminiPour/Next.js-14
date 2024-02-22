@@ -1,5 +1,13 @@
 const TaskForm = () => {
-  return <div>TaskForm</div>;
+  return (
+    <form className="mb-8">
+      <input
+        type="text"
+        className=" p-1 rounded-md border border-base-300 shadow-sm"
+      />
+      <button className="btn bg-green-500 btn-sm">Add Task</button>
+    </form>
+  );
 };
 
 export default TaskForm;
